@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#35374D">
+
+    <ImageView
+        android:id="@+id/imgViewBottomMediaPlayerArt"
+        android:layout_width="54dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_music"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/tvBottomMediaPlayerSongName"
+        android:layout_width="190dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Song"
+        app:layout_constraintBottom_toTopOf="@+id/tvBottomMediaPlayerArtistName"
+        app:layout_constraintStart_toEndOf="@+id/imgViewBottomMediaPlayerArt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/tvBottomMediaPlayerArtistName"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Lata Mangeshkar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgViewBottomMediaPlayerArt" />
+
+    <ImageButton
+        android:backgroundTint="#00ffffff"
+        android:id="@+id/imgbtnBottomMediaPlayerFavourite"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/ic_heart_icon_pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtnBottomMediaPlayerPlayPause"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:backgroundTint="#00ffffff"
+        android:id="@+id/imgbtnBottomMediaPlayerPlayPause"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/ic_play_arrow_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

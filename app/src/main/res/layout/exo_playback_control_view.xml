@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7C7E90">
+
+    <ImageButton
+        android:backgroundTint="#00ffffff"
+        android:layout_marginLeft="300dp"
+        android:id="@id/exo_play"
+        android:src="@drawable/ic_play_mini_bottom"
+        android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:tintMode="src_in" />
+
+    <ImageButton
+        android:backgroundTint="#00ffffff"
+        android:id="@id/exo_pause"
+        android:src="@drawable/ic_pause_24"
+        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:tintMode="src_in" />
+</LinearLayout>
