@@ -10,9 +10,9 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.kode.proj1"
+        applicationId "com.kode.prageet"
         manifestPlaceholders.redirectSchemeName='kode'
-        manifestPlaceholders.redirectHostName="proj1"
+        manifestPlaceholders.redirectHostName="prageet"
         minSdk 21
         targetSdk 32
         versionCode 1
@@ -84,6 +84,9 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     // OkHttp
     implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+
+    //RxAndroid
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
 
 
 }
